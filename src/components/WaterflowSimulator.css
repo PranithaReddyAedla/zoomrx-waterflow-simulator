@@ -1,0 +1,110 @@
+.container {
+  min-width: 400px;
+  max-width: 500px;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  padding: 10px 10px 30px;
+  margin: 20px !important;
+}
+
+.subContainer {
+  /* max-width:400px; */
+  padding: 10px;
+  margin: auto;
+}
+
+.subHed {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: medium;
+}
+
+.fill {
+  display: inline-flex;
+  background-color: black;
+  position: relative;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.fillGridBox {
+  display: inline-flex;
+  background-color: black;
+  border: 1px solid black;
+  height: 30px;
+  width: 30px;
+}
+
+.emptyGridBox {
+  height: 30px;
+  width: 30px;
+  background: #eeeeee;
+  display: inline-block;
+  border: 1px solid black;
+}
+
+.selectSection {
+  height: 32px;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 4px;
+}
+
+.selectGridBox {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  border: 1px solid black;
+  background-color: rgb(198, 232, 245);
+}
+
+.selectedBox {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  border: 1px solid black;
+  background-color: rgb(0, 153, 255);
+}
+.selectedEmptyBox {
+  height: 30px;
+  width: 32px;
+  display: inline-block;
+  background-color: white;
+}
+
+.empty {
+  display: inline-flex;
+  background-color: #cfcfcf;
+  border: 1px solid black;
+  position: relative;
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+}
+
+.block {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+
+.bd {
+  border: 1px solid black;
+}
+
+.waterBlock {
+  background: rgb(0, 153, 255);
+}
+.obsBlock {
+  background: black;
+}
+.whiteBlock {
+  background: #eeeeee;
+}
+
+.sharedBtns {
+  margin: 15px !important;
+  padding: 8px 30px !important;
+}
