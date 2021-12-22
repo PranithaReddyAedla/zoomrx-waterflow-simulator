@@ -23,11 +23,12 @@ export const GridInstance = (props) => {
     setSelectedSimulationBox(indexValue);
   };
   const handleOnClickStartSimulation = (value) => {
-    console.log(value);
     setIsStartSimulation(value);
+    console.log(gridSkelton);
   };
   const handleOnClickStart = (value) => {
     setIsStart(value);
+    console.log(gridSkelton);
   };
   const handleBackClick = (value) => {
     handleBackButtonClick(value);
@@ -38,6 +39,11 @@ export const GridInstance = (props) => {
     setIsStartSimulation(false);
     setGridSkelton(create2DArray(rowCount, columnCount));
   };
+  const handleSetGridSkelton = (value) => {
+    setGridSkelton(value);
+    console.log(gridSkelton);
+  };
+
   return (
     <Grid
       container
@@ -51,7 +57,7 @@ export const GridInstance = (props) => {
             <GridWithDragDrop
               obstaclesCount={obstaclesCount}
               gridSkelton={gridSkelton}
-              handleSetGridSkelton={setGridSkelton}
+              handleSetGridSkelton={handleSetGridSkelton}
               handleOnClickStartSimulation={handleOnClickStartSimulation}
               isStartClicked={isStartClicked}
               handleOnClickStart={handleOnClickStart}
@@ -66,7 +72,7 @@ export const GridInstance = (props) => {
               gridSkelton={gridSkelton}
               selectedSimulationBox={selectedSimulationBox}
               handleBackClick={handleBackClick}
-              handleSetGridSkelton={setGridSkelton}
+              handleSetGridSkelton={handleSetGridSkelton}
               handleResetClick={handleResetClick}
             />
           )}

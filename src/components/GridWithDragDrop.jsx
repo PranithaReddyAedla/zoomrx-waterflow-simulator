@@ -141,7 +141,9 @@ export default function GridWithDragDrop(props) {
       ) : (
         <button
           className={"sharedBtns"}
-          onClick={() => handleOnClickStart(true)}
+          onClick={() => {
+            handleOnClickStart(true);
+          }}
         >
           Start
         </button>
